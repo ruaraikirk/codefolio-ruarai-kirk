@@ -1,0 +1,73 @@
+---
+// Astro component frontmatter (runs on the server during build)
+// No JS here will run on the client by default.
+---
+
+<div class="container">
+    <div class="back-nav-container">
+        <a href="/" class="back-nav-button w-inline-block"
+            ><img
+                src="/assets/back.svg"
+                loading="lazy"
+                alt=""
+                class="back-nav-img"
+            />
+            <div>Back</div></a
+        >
+    </div>
+    <div class="content-container">
+        <h1>Blog</h1>
+        <section class="items-container">
+            <!-- start sw-rss-feed code -->
+            <script type="text/javascript">
+                rssfeed_url = new Array();
+                rssfeed_url[0] = "https://medium.com/feed/@ruaraikirk";
+                rssfeed_frame_width = "100%";
+                rssfeed_frame_height = "260";
+                rssfeed_scroll = "on";
+                rssfeed_scroll_step = "6";
+                rssfeed_scroll_bar = "off";
+                rssfeed_target = "_blank";
+                rssfeed_font_size = "16";
+                rssfeed_font_face = "system-ui, sans-serif";
+                rssfeed_border = "on";
+                rssfeed_title = "on";
+                rssfeed_title_name = "";
+                rssfeed_title_bgcolor = "#1c1c1c";
+                rssfeed_title_color = "#fff";
+                rssfeed_title_bgimage = "";
+                rssfeed_footer = "on";
+                rssfeed_footer_name = "rss";
+                rssfeed_footer_bgcolor = "#161616";
+                rssfeed_footer_color = "#a8a8a8";
+                rssfeed_footer_bgimage = "";
+                rssfeed_item_title_length = "200";
+                rssfeed_item_title_color = "#fff";
+                rssfeed_item_bgcolor = "#1c1c1c";
+                rssfeed_item_bgimage = "";
+                rssfeed_item_border_bottom = "on";
+                rssfeed_item_source_icon = "off";
+                rssfeed_item_date = "off";
+                rssfeed_item_description = "on";
+                rssfeed_item_description_length = "200";
+                rssfeed_item_description_color = "#a8a8a8";
+                rssfeed_item_description_link_color = "#a8a8a8";
+                rssfeed_item_description_tag = "on";
+                rssfeed_no_items = "0";
+                rssfeed_cache = "84cba83930dce7d3013e308559bbd025";
+            </script>
+            <script
+                type="text/javascript"
+                src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+            <!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
+            <div style="color:#ccc; font-size:10px; width:230px;">
+                powered by <a
+                    href="https://surfing-waves.com"
+                    rel="noopener"
+                    target="_blank"
+                    style="color:#ccc;">Surfing Waves</a>
+            </div>
+            <!-- end sw-rss-feed code -->
+        </section>
+    </div>
+</div>
