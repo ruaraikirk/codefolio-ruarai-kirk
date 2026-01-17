@@ -4,28 +4,28 @@ import Project from '../components/Project.astro';
 import Sidebar from '../components/Sidebar.astro';
 const projects = [
   {
-    title: "TeleJS",
+    title: "Wookieleaks",
     desc: [
-      "Built a lightweight, open-source Slack API framework for efficient bot development",
-      "Developed in Node.js and published as an NPM package"
+      "Wookieleaks is a small web app built with Vite and React using SWAPI via its GraphQL Wrapper"
     ],
-    tech: ["Node.js", "NPM"]
+    link: "https://github.com/ruaraikirk/wookieleaks",
+    tech: ["Vite", "React", "Tailwind", "GraphQL"]
   },
   {
-    title: "pyPrompter",
+    title: "MotorcycleNewb",
     desc: [
-      "Contributed to a popular open-source Python pip package for building interactive CLIs",
-      "Developed a feature that lets you 'freeze' inquirer choices"
+      "A social media platform for beginner motorcycle enthusiasts"
     ],
-    tech: ["Python"]
+    link: "https://github.com/ruaraikirk/MotorcycleNewb",
+    tech: ["C#", ".NET"]
   },
   {
-    title: "WebAssetHub",
+    title: "Natours",
     desc: [
-      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
-      "Sold over 700 items"
+      "Tour e-commerce web app built with Node.js"
     ],
-    tech: ["Python", "Selenium"]
+    link: "https://github.com/ruaraikirk/natours",
+    tech: ["Node.js"]
   }
 ];
 ---
@@ -53,6 +53,7 @@ const projects = [
                       <Project 
                         title={project.title} 
                         desc={project.desc}
+                        link={project.link}
                         tech={project.tech}
                       />
                     ))}
@@ -62,7 +63,6 @@ const projects = [
         </div>
       </nav>
     </div>
-
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   </body>
 </html>

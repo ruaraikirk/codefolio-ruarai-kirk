@@ -1,19 +1,13 @@
 ---
-const { title, desc, link, tech } = Astro.props;
+const { title, date, desc, logo, tech } = Astro.props;
 ---
 
 <div class="single-item">
-  <div style="display: flex; align-items: center;">
-    <h3>{title}</h3>
-    <a href={link} style="margin-left: 10px;">
-      <img
-        src="/assets/link.svg"
-        loading="eager"
-        alt="link"
-        class="nav-link-image"
-      />
-    </a>
+  <h3>{title}</h3>
+  <div class="projects-category-image-container">
+    <img src={logo} loading="lazy" alt="" class="projects-category-image" />
   </div>
+  <h2>{date}</h2>
   <div class="project-desc project-desc-list w-richtext">
     <ul role="list">
       {desc.map(item => <li>{item}</li>)}

@@ -1,0 +1,104 @@
+---
+import Header from "../components/Header.astro";
+import Role from "../components/Role.astro";
+import Sidebar from "../components/Sidebar.astro";
+const projects = [
+  {
+    title: "Digital Stack",
+    date: 'Nov 2022 – Oct 2025',
+    desc: [
+      "Developed a large-scale e-commerce platform for indie game developers",
+      "Designed and implemented UI, backend, and database architecture",
+      "Contributed to RESTful API and GraphQL design",
+      "Led a team of three engineers for several months"
+    ],
+    logo: "/assets/digital-stack.jpeg",
+    tech: ["TypeScript", "React", "Next.js", "Node.js", "NestJS", "Postgres", "Pulumi", "AWS", "Databricks"]
+  },
+  {
+    title: "Continuous Software",
+    date: "Jul 2019 – Oct 2022",
+    desc: [
+      "Lead the frontend team on Continuous Software’s flagship product for use in project management, aangine™, which is developed specifically for the management of project portfolios",
+      "Working within an Agile development environment utilising JavaScript based technologies including React in the frontend and Node.js on a backend micro-service",
+      "Also leveraged industry standard tools such as WebStorm, GitLab, Jira, Jenkins and Docker to name but a few",
+      "Owned a performance testing and application optimisation project carried out with the Saudi Commission for Tourism and National Heritage (SCTH), as part of their major development of a new eVisa platform, where tourist visa applications would be streamlined globally for the Kingdom."
+    ],
+    logo: "/assets/continuous-software.jpeg",
+    tech: ["Javascript", "Node.js", "Express.js", "React", "MongoDB", "Dcoker"]
+  },
+  {
+    title: "SAP",
+    date: "Jan 2019 – Jul 2019",
+    desc: [
+      "Worked with SAP's Dublin UX Team developing user friendly and intuitive JavaScript based web applications, as well as VS Code extensions for use by other SAP teams",
+      "Working within an Agile development environment leveraging industry standard tools and collaborating with a diverse team of developers, designers, test, DevOps and product owners",
+      "From the first day involved in projects, for example the development of a web application for the storage of documentation with tools including React, Redux, GatsbyJS, Netlify and Sass",
+      "Also drove an interesting prototyping project developing VSCode extensions for fellow developers within the company"
+    ],
+    logo: "/assets/sap.jpeg",
+    tech: ["TypeScript", "React", "Node.js",  "Redux", "GatsbyJS", "Netlify", "Sass"]
+  },
+    {
+    title: "KPMG",
+    date: "Nov 2016 – Jan 2019",
+    desc: [
+      "Spent two years in the interesting field of the Research and Development ('R&D') tax credit and relief scheme in Ireland",
+      "The R&D tax credit is a unique area of tax that requires understanding of science, technology, accounting, and taxation",
+      "The R&D tax credit is an incentive to encourage companies to carry out R&D activities and to attract multinationals to invest in Research, Development and Innovation ('R&D&I')",
+      "During that time, decided to undertake a Higher Diploma in Computing at TUD (previously DIT) in order to progress into the Software Development industry",
+      "This course covered the core fundamentals of Computer Science, with a strong focus OOP (Java, C#) and covering topics such as SOLID design principles, information systems, as well as web application and Android application development"
+    ],
+    logo: "/assets/kpmg.jpeg",
+    tech: []
+  },
+    {
+    title: "Intel",
+    date: "Nov 2012 – Jul 2015",
+    desc: [
+      "In this role, primary focus revolved around photolithography equipment troubleshooting and sustaining ownership of day-today operations with a focus on delivering best-in-class results for tool availability, cycle time, defect and parametric performance within a 24-hour manufacturing environment",
+      "Additionally, managed a team of eight technicians, as well as being point of escalation for engineering issues and providing hands-on technical support, with a focus on safety, people, quality, velocity and cost"
+    ],
+    logo: "/assets/intel.jpg",
+    tech: []
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Experience | Ruarai Kirk" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="experience" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>Experience</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Role 
+                        title={project.title} 
+                        date={project.date}
+                        desc={project.desc}
+                        logo={project.logo}
+                        tech={project.tech}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>
