@@ -7,25 +7,26 @@ const projects = [
     title: "Digital Stack",
     date: 'Nov 2022 – Oct 2025',
     desc: [
-      "Developed a large-scale e-commerce platform for indie game developers",
-      "Designed and implemented UI, backend, and database architecture",
-      "Contributed to RESTful API and GraphQL design",
-      "Led a team of three engineers for several months"
+      "Digital Stack is a All-in-one marketing and brand management SaaS platform for franchise and multi-location businesses",
+      "Owned end to end feature development from ideation, implementation, test and deployment, ensuring transition from raw concept into a functional, live, and maintained feature",
+      "Co-Led a team of eight engineers, acting as upper management liason and poc for developer well-being and growth"
     ],
+    link: "https://www.digitalstack.io/",
     logo: "/assets/digital-stack.jpeg",
-    tech: ["TypeScript", "React", "Next.js", "Node.js", "NestJS", "Postgres", "Pulumi", "AWS", "Databricks"]
+    tech: ["TypeScript", "React", "Next.js", "Node.js", "NestJS", "Postgres", "Pulumi", "AWS", "Databricks", "CircleCI", "Cypress"]
   },
   {
     title: "Continuous Software",
     date: "Jul 2019 – Oct 2022",
     desc: [
-      "Lead the frontend team on Continuous Software’s flagship product for use in project management, aangine™, which is developed specifically for the management of project portfolios",
+      "Led the frontend team on Continuous Software’s flagship product for use in project management, aangine™, which is developed specifically for the management of project portfolios",
       "Working within an Agile development environment utilising JavaScript based technologies including React in the frontend and Node.js on a backend micro-service",
       "Also leveraged industry standard tools such as WebStorm, GitLab, Jira, Jenkins and Docker to name but a few",
       "Owned a performance testing and application optimisation project carried out with the Saudi Commission for Tourism and National Heritage (SCTH), as part of their major development of a new eVisa platform, where tourist visa applications would be streamlined globally for the Kingdom."
     ],
+    link: "https://continuous.software/",
     logo: "/assets/continuous-software.jpeg",
-    tech: ["Javascript", "Node.js", "Express.js", "React", "MongoDB", "Dcoker"]
+    tech: ["Javascript", "Node.js", "Express.js", "React", "MongoDB", "Docker"]
   },
   {
     title: "SAP",
@@ -36,6 +37,7 @@ const projects = [
       "From the first day involved in projects, for example the development of a web application for the storage of documentation with tools including React, Redux, GatsbyJS, Netlify and Sass",
       "Also drove an interesting prototyping project developing VSCode extensions for fellow developers within the company"
     ],
+    link: "https://www.sap.com/uk/index.html",
     logo: "/assets/sap.jpeg",
     tech: ["TypeScript", "React", "Node.js",  "Redux", "GatsbyJS", "Netlify", "Sass"]
   },
@@ -49,6 +51,7 @@ const projects = [
       "During that time, decided to undertake a Higher Diploma in Computing at TUD (previously DIT) in order to progress into the Software Development industry",
       "This course covered the core fundamentals of Computer Science, with a strong focus OOP (Java, C#) and covering topics such as SOLID design principles, information systems, as well as web application and Android application development"
     ],
+    link: "https://kpmg.com/ie/en.html",
     logo: "/assets/kpmg.jpeg",
     tech: []
   },
@@ -59,6 +62,7 @@ const projects = [
       "In this role, primary focus revolved around photolithography equipment troubleshooting and sustaining ownership of day-today operations with a focus on delivering best-in-class results for tool availability, cycle time, defect and parametric performance within a 24-hour manufacturing environment",
       "Additionally, managed a team of eight technicians, as well as being point of escalation for engineering issues and providing hands-on technical support, with a focus on safety, people, quality, velocity and cost"
     ],
+    link: "https://www.intel.ie/content/www/ie/en/company-overview/intel-in-ireland.html",
     logo: "/assets/intel.jpg",
     tech: []
   }
@@ -89,6 +93,7 @@ const projects = [
                         title={project.title} 
                         date={project.date}
                         desc={project.desc}
+                        link={project.link}
                         logo={project.logo}
                         tech={project.tech}
                       />
